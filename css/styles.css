@@ -1,0 +1,132 @@
+@font-face {font-family:Hotpoint; font-weight:300; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Light.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Regular.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Medium.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Bold.ttf") format("truetype")}
+
+.land-dishwasher-wrapper,
+.land-dishwasher-wrapper *,
+.land-dishwasher-wrapper *::before,
+.land-dishwasher-wrapper *::after {outline:none; box-sizing:border-box; font-family:Hotpoint, sans-serif; letter-spacing:0}
+
+.land-dishwasher-wrapper {background:#FFFFFF; position:relative; overflow:hidden; width:100%}
+
+.land-dishwasher-container {margin:0 auto; max-width:1168px}
+
+@media (max-width:1167px) {
+    .land-dishwasher-container {padding:0 10px}
+}
+
+.land-dishwasher-welcome {position:relative; display:flex; align-items:center; justify-content:center; height:450px; background:url(../img/land-dishwasher-welcome.jpg) no-repeat center; background-size:auto 450px}
+.land-dishwasher-welcome::before {content:""; position:absolute; left:0; top:0; bottom:0; right:50%; margin-right:-123px; background:linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%)}
+.land-dishwasher-welcome .land-dishwasher-container {position:relative; width:100%}
+.land-dishwasher-welcome-title {font-weight:500; font-size:60px; line-height:72px; color:#FFFFFF}
+.land-dishwasher-welcome-text {margin:20px 0 0 0; font-weight:normal; font-size:20px; line-height:28px; color:#FFFFFF}
+.land-dishwasher-welcome-btn {margin:40px 0 0 0; display:flex}
+.land-dishwasher-welcome-btn a {display:flex; align-items:center; justify-content:center; border:1px solid #C99B69; padding:0 24px; color:#C99B69; font-weight:500; font-size:16px; line-height:16px; height:43px; border-radius:4px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s; text-transform:uppercase}
+.land-dishwasher-welcome-btn a:hover {color:#FFFFFF; border-color:#C99B69; background:#C99B69}
+.land-dishwasher-welcome-notice {margin:20px 0 0 0; font-weight:normal; font-size:16px; line-height:22px; color:rgba(255, 255, 255, 0.5)}
+
+@media (max-width:1167px) {
+    .land-dishwasher-welcome {display:block; height:693px; text-align:center; background:#000000 url(../img/land-dishwasher-welcome-mobile.jpg) no-repeat center top; background-size:auto 588px}
+    .land-dishwasher-welcome::before {bottom:auto; right:0; margin-right:0; height:270px; background:linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%)}
+    .land-dishwasher-welcome::after {content:""; position:absolute; left:0; right:0; bottom:0; height:104px; background:#000000}
+    .land-dishwasher-welcome .land-dishwasher-container {display:flex; flex-direction:column; height:693px; padding:40px 15px 0 15px}
+    .land-dishwasher-welcome-title {font-size:30px; line-height:36px}
+    .land-dishwasher-welcome-text {margin:10px 0 0 0; font-size:16px; line-height:24px; flex-grow:1}
+    .land-dishwasher-welcome-btn {margin:0; display:block; position:relative; z-index:1}
+    .land-dishwasher-welcome-notice {margin:10px 0 0 0; font-size:12px; line-height:17px; position:relative; z-index:1}
+}
+
+.land-dishwasher-zone {background:#000000; padding:120px 0 240px 0}
+.land-dishwasher-zone-title {text-align:center; font-weight:normal; font-size:40px; line-height:56px; color:#FFFFFF}
+.land-dishwasher-zone-top {margin:40px -999px 0 -999px; height:450px; background:url(../img/land-dishwasher-zone-top.jpg) no-repeat center; background-size:auto 450px}
+.land-dishwasher-zone-text {margin:40px auto 0 auto; max-width:764px; color:#FFFFFF; font-weight:normal; font-size:20px; line-height:34px; text-align:center}
+.land-dishwasher-zone-text span {display:block; font-weight:bold; font-size:30px; line-height:51px; color:#C99B69}
+.land-dishwasher-zone-bottom {margin:40px auto 0 auto; max-width:544px}
+.land-dishwasher-zone-bottom img {display:block; width:100%; border-radius:16px}
+
+@media (max-width:1167px) {
+    .land-dishwasher-zone {padding:80px 0 160px 0}
+    .land-dishwasher-zone-title {font-weight:500; font-size:24px; line-height:29px}
+    .land-dishwasher-zone-top {height:240px; background:url(../img/land-dishwasher-zone-top-mobile.jpg) no-repeat center; background-size:auto 240px}
+    .land-dishwasher-zone-text {font-size:15px; line-height:26px}
+    .land-dishwasher-zone-text span {margin:15px 0; font-size:20px; line-height:28px}
+    .land-dishwasher-zone-text br {display:none}
+    .land-dishwasher-zone-bottom {margin:30px auto 0 auto}
+    .land-dishwasher-zone-bottom+.land-dishwasher-zone-text {margin:30px auto 0 auto}
+}
+
+.land-dishwasher-techs {position:relative; margin:-120px 0 0 0; background:#141415; padding:120px 0 240px 0; border-radius:36px 36px 0 0}
+.land-dishwasher-techs-title {text-align:center; font-weight:normal; font-size:40px; line-height:56px; color:#FFFFFF}
+.land-dishwasher-techs-list {margin:60px 0 0 0}
+.land-dishwasher-techs-list-item {display:flex; align-items:center; justify-content:space-between; margin:27px 0 0 0}
+.land-dishwasher-techs-list .swiper-wrapper {display:block}
+.land-dishwasher-techs-list .swiper-slide:first-child .land-dishwasher-techs-list-item {margin:0}
+.land-dishwasher-techs-list-item-img {min-width:564px; max-width:564px}
+.land-dishwasher-techs-list .swiper-slide:nth-child(odd) .land-dishwasher-techs-list-item-img {order:1}
+.land-dishwasher-techs-list-item-img img {display:block; width:100%; border-radius:8px}
+.land-dishwasher-techs-list-item-container {min-width:564px; max-width:564px}
+.land-dishwasher-techs-list-item-title {font-weight:500; font-size:24px; line-height:34px; color:#FFFFFF}
+.land-dishwasher-techs-list-item-img-mobile {display:none}
+.land-dishwasher-techs-list-item-text {margin:20px 0 0 0; font-weight:normal; font-size:16px; line-height:27px; color:#FFFFFF}
+.land-dishwasher-techs-list-ctrl {display:none}
+
+@media (max-width:1167px) {
+    .land-dishwasher-techs-list {margin:60px 0 0 0}
+    .land-dishwasher-techs {margin:-90px 0 0 0; padding:70px 0 160px 0; border-radius:20px 20px 0 0}
+    .land-dishwasher-techs-title {font-weight:500; font-size:24px; line-height:29px}
+    .land-dishwasher-techs-list {margin:50px 0 0 0}
+    .land-dishwasher-techs-list .swiper-wrapper {display:flex}
+    .land-dishwasher-techs-list-item {display:block; margin:0}
+    .land-dishwasher-techs-list-item-img {display:none}
+    .land-dishwasher-techs-list-item-container {min-width:0; max-width:none; text-align:center}
+    .land-dishwasher-techs-list-item-title {font-size:20px; line-height:28px}
+    .land-dishwasher-techs-list-item-img-mobile {display:block; margin:20px 0 0 0}
+    .land-dishwasher-techs-list-item-img-mobile img {display:block; width:100%; border-radius:8px}
+    .land-dishwasher-techs-list-item-text {font-size:15px; line-height:26px}
+    .land-dishwasher-techs-list-ctrl {display:flex; margin:50px 0 0 0; align-items:center; justify-content:space-between}
+    .land-dishwasher-techs-list-ctrl .swiper-button-prev,
+    .land-dishwasher-techs-list-ctrl .swiper-button-next {position:relative; display:block; z-index:2; top:auto; width:30px; height:30px; border:none; border-radius:0; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none; transform:none; opacity:1}
+    .land-dishwasher-techs-list-ctrl .swiper-button-prev::after,
+    .land-dishwasher-techs-list-ctrl .swiper-button-next::after {display:none}
+    .land-dishwasher-techs-list-ctrl .swiper-button-prev {left:auto}
+    .land-dishwasher-techs-list-ctrl .swiper-button-next {left:auto}
+    .land-dishwasher-techs-list-ctrl .swiper-button-prev svg,
+    .land-dishwasher-techs-list-ctrl .swiper-button-next svg {display:block; width:30px; height:30px; fill:#C99B69}
+    .land-dishwasher-techs-list-ctrl .swiper-pagination.swiper-pagination-horizontal {display:flex; position:relative; margin:0; width:auto; left:auto; top:auto; right:auto; bottom:auto; align-items:center; justify-content:center}
+    .land-dishwasher-techs-list-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:5px; max-width:5px; height:5px; background:#D9D9D9; opacity:1; margin:0 0 0 30px; border-radius:5px; cursor:pointer; position:relative; transition:min-width 0.2s, max-width 0.2s, height 0.2s, background 0.2s}
+    .land-dishwasher-techs-list-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet:first-child {margin:0}
+    .land-dishwasher-techs-list-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:10px; max-width:10px; height:10px; background:#C99B69; opacity:1}
+}
+
+.land-dishwasher-catalogue {position:relative; margin:-120px 0 0 0; background:#FFFFFF; padding:120px 0 176px 0; border-radius:36px 36px 0 0}
+.land-dishwasher-catalogue-logo img {display:block; width:142px; margin:0 auto}
+.land-dishwasher-catalogue-title {margin:20px 0 0 0; font-weight:normal; font-size:40px; line-height:60px; color:#000000; text-align:center}
+.land-dishwasher-catalogue-menu {display:flex; margin:20px -10px 0 -10px; flex-wrap:wrap; justify-content:space-between}
+.land-dishwasher-catalogue-menu a {display:block; min-width:calc(25% - 20px); max-width:calc(25% - 20px); margin:20px 10px 0 10px; padding:20px 40px; background:#EDEDED; border-radius:8px; text-align:center; color:#000000; text-decoration:none; transition:background 0.2s; font-weight:500; font-size:16px; line-height:27px}
+.land-dishwasher-catalogue-menu a:hover,
+.land-dishwasher-catalogue-menu a.active {background:#C99B69}
+.land-dishwasher-catalogue-menu-arrow {margin:16px auto 0 auto; width:62px}
+.land-dishwasher-catalogue-menu-arrow svg {display:block; width:62px; height:8px; fill:#C99C69; transition:fill 0.2s}
+.land-dishwasher-catalogue-menu a:hover .land-dishwasher-catalogue-menu-arrow svg,
+.land-dishwasher-catalogue-menu a.active .land-dishwasher-catalogue-menu-arrow svg {fill:#FFFFFF}
+.land-dishwasher-catalogue-menu-size {margin:6px 0 0 0}
+.land-dishwasher-catalogue-container {margin:20px 0 0 0; position:relative}
+.land-dishwasher-catalogue-content {position:absolute; left:-9999px; top:-9999px; width:100%; opacity:0; transition:opacity 0.2s}
+.land-dishwasher-catalogue-content.active {position:relative; left:auto; top:auto; opacity:1}
+.land-dishwasher-catalogue-content img {display:block; width:100%; border-radius:8px}
+.land-dishwasher-catalogue-content img+img {display:none}
+.land-dishwasher-catalogue-content a {position:absolute; left:50%; bottom:20px; margin-left:-109px; display:flex; align-items:center; justify-content:center; width:218px; height:43px; text-decoration:none; color:#FFFFFF; background:#C99B69; border:1px solid #C99B69; border-radius:4px; font-weight:bold; font-size:16px; line-height:16px; text-transform:uppercase; transition:background 0.2s, color 0.2s}
+.land-dishwasher-catalogue-content a:hover {background:#FFFFFF; color:#C99B69}
+
+@media (max-width:1167px) {
+    .land-dishwasher-catalogue {margin:-80px 0 0 0; padding:80px 0; border-radius:20px 20px 0 0}
+    .land-dishwasher-catalogue-title {font-weight:500; font-size:24px; line-height:36px}
+    .land-dishwasher-catalogue-menu {margin:30px -5px 0 -5px}
+    .land-dishwasher-catalogue-menu a {min-width:calc(50% - 10px); max-width:calc(50% - 10px); margin:10px 5px 0 5px; padding:10px; font-size:14px; line-height:21px}
+    .land-dishwasher-catalogue-menu-size {font-size:16px; line-height:27px}
+    .land-dishwasher-catalogue-container {margin:10px 0 0 0}
+    .land-dishwasher-catalogue-content img {display:none}
+    .land-dishwasher-catalogue-content img+img {display:block}
+    .land-dishwasher-catalogue-content a {position:relative; left:auto; bottom:auto; margin:10px 0 0 0; display:flex; width:auto; height:43px}
+}
